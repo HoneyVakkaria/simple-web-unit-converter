@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Temperature Conversion</title>
+    </head>
+    <body>
+        <h1>Temperature converter</h1>
+        <nav>
+            <a href="index.html">Length</a>
+            <a href="/weight">Weight</a>
+            <a href="/temperature">Temperature</a>
+        </nav>
+
+        <form action="/submitTemperature" method="post">
+            <h3>
+                <label for="amount">Enter the temperature to convert:</label>
+            </h3>
+            <p><input type="number" id="amount" name="amount" value="0" /></p>
+            <input type="hidden" name="redirect" value="/temperature" />
+
+            <h3><label for="from">Unit to convert from</label></h3>
+            <p>
+                <select id="from" name="from">
+                    <option value="Celcius">Celcius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </p>
+
+            <h3><label for="to">Unit to convert to</label></h3>
+            <p>
+                <select id="to" name="to">
+                    <option value="Celcius">Celcius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </p>
+
+            <h1><button type="submit" />Convert</h1>
+        </form>
+    </body>
+</html>

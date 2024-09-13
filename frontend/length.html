@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Length Conversion</title>
+    </head>
+    <body>
+        <h1>Length converter</h1>
+        <nav>
+            <a href="/length">Length</a>
+            <a href="/weight">Weight</a>
+            <a href="/temperature">Temperature</a>
+        </nav>
+
+        <form action="/submitLength" method="post">
+            <h3><label for="amount">Enter the length to convert:</label></h3>
+            <p><input type="number" id="amount" name="amount" value="0" /></p>
+            <input type="hidden" name="redirect" value="/length" />
+
+            <h3><label for="from">Unit to convert from</label></h3>
+            <p>
+                <select id="from" name="from">
+                    <option value="mm">millimeter</option>
+                    <option value="cm">centimeter</option>
+                    <option value="m">meter</option>
+                    <option value="km">kilometer</option>
+                    <option value="in">inch</option>
+                    <option value="ft">foot</option>
+                    <option value="yd">yard</option>
+                    <option value="ml">mile</option>
+                </select>
+            </p>
+
+            <h3><label for="to">Unit to convert to</label></h3>
+            <p>
+                <select id="to" name="to">
+                    <option value="mm">millimeter</option>
+                    <option value="cm">centimeter</option>
+                    <option value="m">meter</option>
+                    <option value="km">kilometer</option>
+                    <option value="in">inch</option>
+                    <option value="ft">foot</option>
+                    <option value="yd">yard</option>
+                    <option value="ml">mile</option>
+                </select>
+            </p>
+
+            <h1><button type="submit" />Convert</h1>
+        </form>
+    </body>
+</html>
