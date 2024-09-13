@@ -9,4 +9,4 @@ cd simple-web-unit-converter/backend
 go run main.go
 ```
 
-Second of all, go to [localhost:8080/]
+Second of all, go to [localhost:8080/](localhost:8080/)
